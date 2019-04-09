@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff">
+
+    <ImageView
+        android:id="@+id/iv_masjid"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/istiqlal" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="2019-02-14"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_date"
+        android:layout_centerHorizontal="true"
+        android:text="0°"
+        android:textColor="#fff"
+        android:textSize="50sp"
+        android:textStyle="italic|bold" />
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:drawableLeft="@drawable/location"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_masjid"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Search Location"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:id="@+id/btn_search"
+                android:text="search"
+                android:background="@drawable/white_rounded_button">
+            </android.support.v7.widget.AppCompatButton>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_search"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DCDCDC">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="Fajr"
+                android:textSize="25dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            <TextView
+                android:id="@+id/tv_fajr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Fajr"
+                android:textSize="25dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="Sunrise"
+                android:textSize="25dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            <TextView
+                android:id="@+id/tv_sunrise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sunrise"
+                android:textSize="25dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#DCDCDC">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="Dzuhur"
+                android:textSize="25dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            <TextView
+                android:id="@+id/tv_dhuhr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Dzuhur"
+                android:textSize="25dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="Ashar"
+                android:textSize="25dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            <TextView
+                android:id="@+id/tv_asr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ashar"
+                android:textSize="25dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#DCDCDC">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="Maghrib"
+                android:textSize="25dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            <TextView
+                android:id="@+id/tv_maghrib"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Maghrib"
+                android:textSize="25dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="Isya"
+                android:textSize="25dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            <TextView
+                android:id="@+id/tv_isya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Isya"
+                android:textSize="25dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

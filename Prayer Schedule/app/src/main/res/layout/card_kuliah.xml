@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="16dp"
+    app:cardCornerRadius="5dp"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="3dp"
+    app:layout_goneMarginRight="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="13dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama"
+                android:textSize="18sp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/tv_nama"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="namaku"
+                android:textAlignment="viewEnd"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_below="@id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="13dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NIM"
+                android:textSize="18sp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/tv_nim"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="nimku"
+                android:textAlignment="viewEnd"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll3"
+            android:layout_below="@id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="13dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kode Matkul"
+                android:textSize="18sp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/tv_kodeMatkul"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="kode matkul"
+                android:textAlignment="viewEnd"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll4"
+            android:layout_below="@id/ll3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="13dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Matkul"
+                android:textSize="18sp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/tv_namaMatkul"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="Nama Matkul"
+                android:textAlignment="viewEnd"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll5"
+            android:layout_below="@id/ll4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="13dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SKS"
+                android:textSize="18sp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/tv_sks"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="SKS"
+                android:textAlignment="viewEnd"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
